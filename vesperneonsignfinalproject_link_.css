@@ -1,0 +1,65 @@
+body{
+	font-size: 12px;
+	font-family: Cascadia Mono;
+	padding: 0;
+	margin: 0;
+}
+#contaner{
+		height: 100vh;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 40px auto;
+		grid-template-areas: "header"
+							 "mainbody"
+							 "footer";
+		grid-row-gap: 5rem;
+}
+#header{
+	grid-area: header;
+	display: flex;
+	justify-content: center;
+	background-color: black;
+	color: white;
+}
+#header h3{
+	position: relative;
+	
+}
+#mainbody{
+	grid-area: mainbody;
+	
+}
+#footer{
+	grid-area: footer;
+	display: flex;
+	justify-content: center;
+}
+#footer img{
+	width: 500px;
+
+}
+table{
+	display: flex;
+	justify-content: center;
+
+}
+table th{
+	padding: 20px;
+	background-color: orange;
+	color: white;
+}
+table td{
+	padding: 20px;
+
+}
+table tr td:hover{
+		border-bottom: 0.5px solid red;
+		position: fixed;
+}
+table tr #unic{
+		border-bottom: none;
+		
+}
+table tr #unic{
+		border:0.5px solid black;
+}

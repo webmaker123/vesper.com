@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="trad.css">
+	<script type="text/javascript">
+
+	</script>
+	<style type="text/css">
+		#header{
+			border-bottom: 0.5px solid #F2E9E6;
+		}
+		table{
+			background-color: #F7F7F7;
+			font-size: 12px;
+			line-height: 13px;
+		}
+		table tr th{
+			padding:10px;
+			background-color: #EDE6E6;
+		}
+		table td {
+			padding: 6px;
+			
+		}
+
+		a{
+			text-decoration: none;
+			background-color: red;
+			color: white;
+			
+
+		}
+		body{
+	font-family: Cascadia Mono;
+	padding: 0;
+	margin: 0;
+
+}
+#contaner{
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 0.2fr 1fr 0.2fr;
+	grid-template-rows: 40px auto;
+	grid-template-areas: "header header header"
+						"sideblock main_one_one  sideblock_one";
+				grid-row-gap: 0.2rem;
+}
+#header{
+	grid-area: header;
+	position: sticky;
+	top: 0;
+	bottom: 10px;
+	padding-left: 10px;
+	
+	display: flex;
+	justify-content: space-around;
+	}
+
+#main_one_one{
+	grid-area: main;
+	display: flex;
+	justify-content: center;
+}
+#sideblock {
+		grid-area: sideblock;
+		
+}
+#sideblock_one{
+	grid-area: sideblock_one;
+
+}
+		#main_one_one{
+			height: 50vh;
+			display: grid;
+			grid-template-columns: 0.5fr 1fr 0.5fr;
+			grid-template-rows: auto;
+
+			grid-template-areas: 
+
+			"img_one img_two img_three"
+			"img_four img_four img_four";
+			grid-row-gap: 1rem;
+			flex-wrap: wrap;
+		}
+		#img_one{
+				grid-area: img_one;
+				
+		}
+		#img_two{
+			grid-area: img_two;
+			display: flex;
+			justify-content: center;
+			
+		}
+		#img_two img{
+				border-radius: 10px 10px 10px 10px;
+		}
+
+		#img_three{
+			grid-area: img_three;
+			
+		}
+		#img_four{
+			grid-area: img_four;
+			position: relative;
+			display: flex;
+			justify-content: center;
+		}
+		button{
+			border: none;
+			text-align: center;
+			padding: 10px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="contaner">
+		<div id="header">
+
+			<h2 style="font-size: 15px;"><span style="font-size: 19px;">vesper</span> neonsing LED LIGHT</h2>
+			
+		</div>
+		<div id="sideblock"></div>
+		<div id="main">
+
+			<div id="main_one_one">
+			<div id="img_one"></div>
+			<div id="img_two">
+				<img style="width: 300px" src="IMG_20250805_121324_477.jpg">
+			</div>
+			<div id="img_three"></div>
+			<div id="img_four">
+				<table style="display: flex;justify-content: center;">
+		<tr style="width: 180px;">
+			<th><sub><img style="width: 50px;" src="neonsign-2.svg"></sub> company</th>
+			<th>Lenght</th>
+			<th>Width</th>
+			<th>contact</th>
+			
+			<th><span style="background-color: red; padding: 15px;color: white;border-radius: 10px 10px 10px 10px;">save%</span></th>
+			<th>img code_no</th>
+		</tr>
+		<tr>
+			<td>vesper <br> neonsing LED LIGHT</td>
+			<td>60cm|20in</td>
+			<td>30cm|30in</td>
+
+			<td>+25195445611<br>
+				
+					</td>
+					<td></td>
+				<td style="color: red">001</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td style="border:1px solid red;">90cm</td>
+			<td  style="border:1px solid red;">80cm</td>
+			<td>+25108811993</td>
+			<td><a style="padding: 10px;font-size: 12px;" href="#">email</a></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>90cm</td>
+			<td>80cm</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>90cm</td>
+			<td>90cm</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>90cm</td>
+			<td>90cm</td>
+		</tr>
+
+	</table>
+			</div>
+			
+
+		</div>
+		<div style="display: flex;justify-content: center;">
+			<img src="">
+			<h1>one</h1>
+		</div>
+	</div>
+		<div id="sideblock_one"></div>
+	</div>
+	
+	</body>
+</html>

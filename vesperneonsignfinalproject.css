@@ -1,0 +1,309 @@
+body{
+	margin: 0;
+	padding:0;
+	font-size: 14px;
+	font-family: Cascadia Mono;
+	text-transform: capitalize;	
+}
+.icon{
+			display: none;
+			
+		}
+#contaner_code_001{
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 0.2fr 1.2fr;
+	grid-template-rows: 60px 700px auto;
+	grid-template-areas: "header header"
+						"navgation main"
+						"navgation main"
+						"footer footer";
+	
+	grid-row-gap: 0.3rem;
+	grid-column-gap: 0.2rem;
+
+}
+#header{
+	grid-area: header;
+	background-color: #F7F7F7;
+	position: sticky;
+	top: 0;
+	display: flex;
+	
+
+}
+
+#header #img_one{
+	width: 60px;
+}
+#header h3{
+	position: absolute;
+	left: 20%;
+	bottom: -5px;
+	text-align: center;
+}
+
+#header a{
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+}
+
+
+#navgation{
+	grid-area: navgation;
+	border-right:  5px solid #F7F7F7;
+	height: 100vh;
+}
+#navgation #navgation_link{
+	text-decoration: none;
+	color: black;
+	position: absolute;
+	left: 10px;
+}
+#navgation #img_one{
+	width: 60px;
+}
+
+#navgation h3{
+	font-size: 19px;
+	border-bottom: 5px solid #F7F7F7;
+
+
+}
+
+#navgation_h3{
+	text-align: center;
+}
+
+#navgation_h4{
+	font-size: 12px;
+	text-align: center;
+}
+ #navgation_menu{
+ 		display: flex;
+ 		flex-direction: column;
+ 		position: sticky;
+ 		top: 0;
+ 		z-index:0;
+
+ }
+
+#navgation_menu a{
+	text-decoration: none;
+	color: black;
+	font-size: 12px;
+	height: 40px;
+	padding: 10px;
+
+}
+
+#navgation_menu a:hover{
+
+	border-bottom: 1.5px solid #F7F7F7;
+}
+
+#navgation_menu_img{
+	width: 20px;
+}
+
+.icontwo{
+					display: none;
+			}
+#main{
+	grid-area: main;
+}
+
+#contanaer_main{
+			display: flex;
+			justify-content: space-around;
+		}
+		#contanaer_main img{
+			width: 300px;
+			border-radius: 10px 10px 10px 10px;
+		}
+		#contanaer_main h4{
+			font-size: 14px;
+			text-align: center;
+		}
+#footer{
+	grid-area: footer;
+	background-color: #F7F7F7;
+	color: black;
+}
+
+#footer_contaner{
+	display: flex;
+	justify-content: space-around;
+	
+}
+#footer_contaner li{
+		color: black;
+}
+#footer_contaner h4{
+	color: black;
+}
+
+a{
+	text-decoration: none;
+	font-size: 12.5px;
+	color: black;
+}
+ul li{
+	list-style: none;
+	color: black;
+	padding: 5px;
+	font-size: 12.5px;
+}
+
+
+@media only screen and (max-width: 1500px){
+		#contaner_code_001 {
+			height: 100vh;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 60px auto;
+			grid-template-areas: "header"
+						"main"
+						"main"
+						"footer";
+	
+			grid-row-gap: 1rem;
+			
+
+}
+		#header{
+			grid-area: header;
+			background-color: #F7F7F7;
+		}
+
+			#navgation{
+				display: none;
+				position: absolute;
+
+				width: 100%;
+				height: 30vh;
+				background-color: white;
+				color: black;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+			}
+
+				#navgation_menu{
+ 						display: flex;
+ 						flex-direction: row;
+ 						position: sticky;
+ 						top: 0;
+ 						z-index: 10px;
+
+ 				}
+ 					#navgation_menu a{
+							width: 200px;
+							color: black;
+							font-size: 15px;
+
+						}
+			#navgation h3{
+			font-size: 19px;
+			border-bottom: 5px solid #F7F7F7;
+		}
+
+		#main{
+			grid-area: main;
+			
+		}
+
+			#contanaer_main{
+			flex-wrap: wrap;
+}
+
+		
+
+		#footer{
+			grid-area: footer;
+			background-color: #F7F7F7;
+			color: black;
+		}
+
+		#footer_contaner{
+			flex-wrap: wrap;
+			justify-content: center;
+	}
+
+		.icon{
+			display: block;
+			position: absolute;
+			top: 0;
+			right:10px;
+			text-decoration: none;
+			font-size: 17px;
+			color: black;
+		}
+		.icontwo{
+					display: block;
+			}
+
+			.style_one{
+				display: block;
+			}
+
+}
+
+@media only screen and (max-width: 800px){
+
+			#navgation{
+				display: none;
+				position: absolute;
+
+				width: 50%;
+				height: 100vh;
+				background-color: white;
+				color: black;
+			}
+
+			#navgation_menu{
+ 				display: flex;
+ 				flex-direction: column;
+ 				background-image: none;
+ 		}
+
+			#navgation_menu a{
+			text-decoration: none;
+			color: black;
+			font-size: 14px;
+			height: 100%;
+			padding: 10px;
+			color: black;
+
+		}
+			.icontwo{
+					display: none;
+			}
+			.icon{
+			display: block;
+			position: absolute;
+			top: 0;
+			right:10px;
+			text-decoration: none;
+			font-size: 17px;
+			color: black;
+			}
+			#navgation_h4{
+				background-color: ;
+				box-shadow: 5px 5px 5px white;
+				border-bottom: 1px solid #91E3E3;
+			}
+			.style_one{
+				display: none;
+			}
+			#footer{
+				font-size: 10px;
+				background-color: #F7F7F7;
+				color: black;
+				
+			}
+			#footer li{
+				font-size: 11px;
+			}
+			
+}

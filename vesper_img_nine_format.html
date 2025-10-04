@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function img_insert(){
+			document.getElementById("file_form_img").alert("hello")
+		}
+	</script>
+	<style type="text/css">
+
+		table{
+			background-color: #F7F7F7;
+			font-size: 12px;
+			line-height: 13px;
+		}
+		table tr th{
+			padding:10px;
+			background-color: #EDE6E6;
+		}
+		table td {
+			padding: 6px;
+			
+		}
+
+		a{
+			text-decoration: none;
+			background-color: red;
+			color: white;
+			
+
+		}
+		#social_m{
+			display: flex;
+			border-left: 3px solid red;
+		}
+		#social_m a{
+			padding: 5px;
+		}
+		#social_m a:hover{
+			border-bottom: 1px solid orange;
+		}
+		#instagrame{
+			background-color: white;
+			color: black;
+			font-size: 13px;
+		}
+		body{
+	font-family: Cascadia Mono;
+	padding: 0;
+	margin: 0;
+}
+				
+
+		#contaner{
+			height: 100vh;
+			display: grid;
+			grid-template-columns: 0.5fr 1fr 0.5fr;
+			grid-template-rows: 40px 300px auto;
+
+			grid-template-areas: 
+			"header header header"
+			"two one three"
+			"two table_frame three"
+			"two four three"
+			"two four three"
+			"two five three";
+			grid-row-gap: 2rem;
+		}
+		#one{
+			grid-area: one;
+			display: flex;
+			justify-content: center;
+		}
+		#four img{
+			display: none;
+		}
+		#four #pc_model_img{
+			display: block;
+			width: 450px;
+		}
+		#one img{
+				border-radius: 10px 10px 10px 10px;
+		}
+		#two{
+			grid-area: two;
+			
+		}
+		#three{
+			grid-area: three;
+		}
+		#four{
+			grid-area: four;
+		}
+		#select_name{
+			width: 200px;
+		}
+		#header{
+			grid-area: header;
+			display: flex;
+			justify-content: space-around;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			border-bottom: 1px solid black;
+		}
+		#five{
+			grid-area: five;
+			padding: 10px;
+			display: flex;
+			justify-content: center;
+		
+		}
+		#five form{
+			display: flex;
+			flex-direction: column;
+			height: 10px;
+			font-size: 11px;
+			text-align: center;
+
+		}
+
+		#five h4{
+				background-color: #F7F7F7;
+				position: relative;
+				right: 50px;
+		}
+		#five input{
+			color: red;
+		}
+		#five #file_form{
+			width: 200px;
+		}
+		#five #file_form_img{
+			width: 200px;
+		}
+		#span_one{
+			color: red;
+		}
+		#span_two{
+			color: green;
+		}
+		#table_frame{
+			grid-area: table_frame;
+		}
+		@media only screen and (max-width: 1000px){
+
+					#four img{
+						display: block;
+					}
+					#four #pc_model_img{
+						display: none;
+					}
+				}
+	</style>
+</head>
+<body>
+		<div id="contaner">
+			<div id="five">
+			
+
+			</div>
+			<div id="header">
+				<h4>vesper neonsign <span id="span_two">LIGHT</span> <span id="span_one"> LED </span></h4>
+				<div id="social_m">
+				<h4>socialize</h4>
+				<a id="instagrame"  href="#"><sub><img style="width: 20px;" src="instagram-logo-8869.svg"></sub> instagram</a>
+				<a  id="instagrame" href="#"><sub><img style="width: 20px;" src="cf525a1c-b1cc-42a1-b061-bbef04ecc3f0.svg"></sub> facebook</a>
+			</div>
+			</div>
+			<div id="table_frame">
+				<table style="display: flex;justify-content: center;">
+		<tr style="width: 180px;">
+			<th><sub><img style="width: 50px;" src="neonsign-2.svg"></sub> company</th>
+			<th>Lenght</th>
+			<th>Width</th>
+			<th>contact</th>
+			
+			<th><span style="background-color: red; padding: 15px;color: white;border-radius: 10px 10px 10px 10px;">save%</span></th>
+			<th>img code_no</th>
+		</tr>
+		<tr>
+			<td>vesper <br> neonsing LED LIGHT</td>
+			<td>60cm|20in</td>
+			<td>30cm|30in</td>
+
+			<td>+25195445611<br>
+				
+					</td>
+					<td></td>
+				<td style="color: red">001</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>90cm</td>
+			<td>80cm</td>
+			<td>+25108811993</td>
+			<td><a style="padding: 10px;font-size: 12px;" href="#">email</a></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>90cm</td>
+			<td>80cm</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>90cm</td>
+			<td>80cm</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>90cm</td>
+			<td>80cm</td>
+		</tr>
+	</table>
+			</div>
+			<div id="one">
+				<img style="width: 300px" src="IMG_20250803_124802_244.jpg">
+			</div>
+			<div id="two">
+				
+			</div>
+			<div style="display: none;" id="three">three</div>
+			<div id="four">
+				<div style="display: flex;justify-content: center;">
+					<img src="code_one.svg">
+					<img id="pc_model_img" src="Untitled-3.svg">
+				
+				</div>
+			</div>
+		</div>
+</body>
+</html>
